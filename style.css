@@ -71,3 +71,34 @@ body.logo-bg {
         max-width: 1140px;
     }
 }
+/* --- ДОДАТКОВІ СТИЛІ ДЛЯ ЛАБ 5 (МОБІЛЬНА АДАПТАЦІЯ) --- */
+
+/* Адаптивні зображення та медіа */
+img, .mock-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Медіа-запити для смартфонів (менше 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 15px; /* Щоб контент не притискався до країв */
+    }
+    
+    /* Зменшуємо розміри логотипів для мобільних екранів */
+    .main-logo-circle {
+        width: 160px;
+        height: 160px;
+        font-size: 1.5rem !important;
+    }
+    .footer-logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Зменшуємо розмір головного заголовка */
+    h1.display-5 {
+        font-size: 2.2rem;
+    }
+}

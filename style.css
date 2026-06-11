@@ -1,0 +1,73 @@
+/* Налаштування базової колірної палітри */
+:root {
+    --bg-main: #f4f6f9;         /* Світло-сірий фон сторінок */
+    --nav-blue: #0b1d3a;        /* Темно-синій колір навбару */
+    --logo-gold: #d4af37;       /* Золотий акцент */
+    --blue-mock: #0078d4;       /* Синій для карток яхт */
+}
+
+html, body {
+    height: 100%;
+}
+
+body.logo-bg {
+    background-color: var(--bg-main);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Навігаційна панель */
+.custom-nav {
+    background-color: var(--nav-blue) !important;
+}
+
+.custom-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
+    color: var(--logo-gold) !important;
+}
+
+/* Графічні елементи */
+.main-logo-circle {
+    width: 240px;
+    height: 240px;
+    background-color: var(--logo-gold);
+    border-radius: 50%;
+    color: var(--nav-blue);
+    letter-spacing: 1px;
+}
+
+.footer-logo-circle {
+    width: 150px;
+    height: 150px;
+    background-color: var(--bg-main);
+    border-radius: 50%;
+}
+
+.btn-gold {
+    background-color: var(--logo-gold) !important;
+    color: var(--nav-blue);
+    border: none;
+    font-weight: 500;
+}
+
+.btn-gold:hover {
+    background-color: #b5952f !important;
+    color: white;
+}
+
+/* Адаптивність (Медіа-запити) */
+@media (min-width: 992px) {
+    .main-logo-circle {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
